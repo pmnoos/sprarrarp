@@ -1,0 +1,310 @@
+
+ 
+
+ hr  {
+   border-color:#53611c;
+ }
+.clearfix img{
+  margin-top: 10px;
+}
+
+ .jumbotron {
+   background-color: #FFFFFF;
+   margin-bottom:1px;
+   padding: 0px;
+   height: 300px;
+  
+ }
+ .text-center {
+   margin: 0px;
+   margin-bottom: 20px; 
+ }
+ 
+.navbar-brand {
+  color: #A1C31A  !important;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.navbar-brand:hover {
+  color:whitesmoke !important;
+}
+ .navbar {
+   margin-top: 10px !important;
+   background-color: gray; 
+   color:#A1C31A
+   
+ }
+  .navbar-nav {
+    margin-top: 10px;
+  }
+ .nav-link {
+   color: #A1C31A !important
+ }  
+ 
+.nav-item a {
+  color: #A1C31A; 
+  font-weight: 900;
+}
+.nav-item a:hover {
+  color: whitesmoke !important
+}
+
+.navbar .navbar-toggler .icon-bar {
+  color: #A1C31A !important;
+}
+.navbar-text{
+  color: whitesmoke !important;
+}
+
+ .sub-heading {
+   text-align: center;
+ } 
+ .message-one {
+   text-align: justify;
+   font-weight: bold;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ .title-one{
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+ }
+.div{
+  height: 10px;
+}
+ .nav-item {
+ font-size: large;
+ text-align: center;
+ padding-left: 1em;
+ 
+ } 
+ 
+
+.logo{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 250px;
+  height: 200px;
+}
+ .button {
+  background-color:whitesmoke;
+  border: none;
+  color: #A1C31A;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #A1C31A;
+  color: greenyellow;
+}
+.button:active {
+  background-color: #A1C31A;
+  color: whitesmoke;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.nav nav-pills flex-column{
+  align-items: justify;
+  margin: 0;
+}
+.carousel {
+  margin-top: 30px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img{
+  width:760px;
+  height:500px;
+}
+.line {
+  color:black;
+  height: 30px;
+  width: 750px;
+}
+
+.about-title {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #A1C31A;
+}
+
+
+.about-message {
+  font-size: 20px;
+}
+ 
+.form-check-input{
+
+  font-size: 16px;
+
+  }
+.turrinding-image{ 
+  width: 200px;
+  height: 295px;
+}
+.img{
+  width: 250px;
+  height: 250px;
+}
+/* Calendar page */
+.cal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+ 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.container-form {
+  margin: 30px;
+}
+.module-content {
+  margin-top: 100px;
+}
+.location-title p {
+ font-size: 40px;
+ font-weight: bold;
+ color:#A1C31A;
+ margin-top: 10px;
+ margin-bottom: 0px;
+}
+.container-map {
+  margin: 20px;
+  align-items: center;
+}
+
+.address {
+  text-align: center;
+  color:#A1C31A;
+  font-weight: 900;
+  margin-top: 0px;;
+}
+/*-- gallery --*/
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*---turriding --*/
+.card-body{
+  width : 25%;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* Individual Form */
+.sussess{
+  background-color: rgba(0,128,0,0,15);
+  padding: 10px;
+  text-align: center;
+  color: #A1C31A;
+  border: 1px solid #A1C31A;
+  border-radius: 3px;
+}
+
+.required{
+  content: "*";
+}

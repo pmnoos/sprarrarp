@@ -1,0 +1,86 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 class="title-one" style="color:#9ebe1e">Welcome to Sparrarp's Icelandic Horseback riding riding school</h2>
+      <hr>
+     
+      <p class="message-one">Now summer is finally on its way
+      A beautiful season to experience from horseback on our alert and prosperous horses 
+      Riding must be safe and instructive in harmony with the horse
+      Bring a friend (or come alone) and join a guided riding tour with our lively, happy and well-ridden Icelandic horses who are all ridden and trained with Natural Horsemanship
+      We at Sparrarp's Icelandic horses recreation center want to make it possible for you to experience beautiful nature without stress on the horse's back.</p>
+      <hr>
+    
+      <h3 class="title-one" style="color:#9ebe1e">Take the opportunity to <span class="">book now</span></h3> 
+      
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item ">
+          <a class="button" href="{% url 'booking' %}">Book Now</a>
+        </li>
+        <li class="nav-item ">
+          <a class="button" href="sparrarpislandshastar@gmail.com">Contat Us</a>
+        </li>
+        <li class="nav-item ">
+          <a class="button" href="46-706-390-141">Mobile</a>
+        </li>
+      </ul>
+  
+    </div>  
+    
+      <div class="col-sm-6">
+    
+        <div class="container">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static '/img/on-the-way.jpg' %}" alt="On The Way">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/img/phillip.jpg' %}" alt="Phillip in the lead">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/img/in-the-woods.jpg' %}" alt="In the Woods">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/img/coming-home.jpg' %}" alt="Coming Home">
+              </div>
+            <div class="carousel-item">
+              <img src="{% static '/img/back.jpg' %}" alt="Were back">
+            </div>
+          </div>
+        </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+    </div>  
+  </div>
+</div>
+
+
+
+
+<hr style=color:black;>
+{% endblock %}

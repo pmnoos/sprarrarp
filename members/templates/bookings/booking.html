@@ -1,0 +1,82 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container text-center">
+	
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-success btn" data-toggle="modal" data-target="#myModal">Turriding Info</button>
+  
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content">
+		  <div class="modal-header">
+			
+			<h3 class="modal-title">Event Information</h3>
+		  </div>
+		  <div class="modal-body">
+			<p>In summer we have choosen to hold the riding at 10:00 in the morning since the afternoons are too warm for the horses.
+			But if you wish another time of the day, please write that in comments and we will get back to you if that is possible We can also take groups up to 10  with good riding skills . Please under comments fill the details of the other 2 riders in the group and we will get back to comfirm the booking of 10 
+			Please remeber wieght limitation on Islandshästar is 85kg
+			We have only one nordsvensk that has a limitation of 100kg
+			If you have problems or comments on the booking site please contact me with sms to 0706390141 or email sparrarpislandshastar@gmail.com</p>
+			<table class="table table-success table-striped">
+				<tbody>
+					<tr>
+					  <th scope="row">Event Date</th>
+					  <td>05-12-2022 10.00am</td>
+					 
+					</tr>
+					<tr>
+					  <th scope="row">Capacity</th>
+					  <td colspan="2">8</td>
+					</tr>
+					<th scope="row">Registered</th>
+					<td colspan="2">8</td>
+					  </tr>
+					<tr>
+					  <th scope="row">Available places</th>
+					  <td colspan="2">8</td>
+					</tr>
+					 <tr>
+					  <th scope="row">Cancel Registration Date</th>
+					  <td colspan="2">05-12-2022</td>
+					 </tr>
+					  <tr>
+						<th scope="row">Individual Price</th>
+						<td colspan="2">600kr for 2-2.5 hours</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Location</th>
+					   <td colspan="2">Sparrarp Islandhastar Rekreation Center</td>
+					  </tr>
+				  </tbody>
+				</table>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+<div class="container">
+	<h1 class="about-title">Bookings Page</h1>
+	<h2 class="about-title">Individual Registration-<a href="/group">Group Registration</h2></a>
+	 
+	
+	 <div class="row"> 
+		<div class="col-12 mt-5">
+			<h5 class="booking">Please Enter Your Contact Info  </h5>
+			
+{% endblock %}
+
+		
+
+
+	
+	
+
+ 

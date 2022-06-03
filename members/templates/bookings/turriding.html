@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% block title %}Turriding{% endblock %}
+{% load static %}
+{% block content %}
+ 
+  <div class="container" >
+ 
+  <h1 class="text-center m-1 font-weight-bold" style="color:#A1C31A">Turridning</h1>
+    <h3 class="text-center font-weight-bold" style="color:#A1C31A">A Great Adventure & Experience</h3>
+  <div class="container-fluid mt-1">
+    <div class="row">
+      <div class="col-sm-3"> <div class="turrinding-image">
+        <img src="{% static '/img/loppa-kidd-phi.jpg' %}" class="img-fluid turrinding-image" alt="Training ride"/>
+      </div></div>
+      <div class="col-sm-6 "><div class="col-md-12 bg-light shadow p-4 mb-4 bg-white font-weight-bold ">
+       <p class="text-center m-1 font-weight-bold" >Sparrarp's Icelandic horses are located near Hästveda in Hässleholm municipality.<br> All the horses available are suitable tour horses all with different characters. 
+          It is important that each rider finds the right horse to ride,<br> based on previous experience<br>
+          Suitable clothes for riding should be comfortable, loose trousers without seams so as not to rub and sturdy shoes.<br>
+          If rain is suspected, a raincoat that is easy to carry in case of a shower<br>
+          The horses are available for a short period of time, from the beginning of the year to the end of the year.<br> The price is from 200 kr per horse per day.</p>
+      </div></div>
+      <div class="col-sm-3"> <div class="turrinding-image" >
+        <img src="{% static '/img/thumbs_up.jpg' %}"class="img-fluid turrinding-image" alt="Thumps-Up"/>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div> 
+  </div>
+  <div class="m-0"> <h1 class="text-center mt-0" style="color:#A1C31A">Price information</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 bg-light shadow p-2 m-0">
+       <h4  class="text-center m-1 font-weight-bold"  style="color:#A1C31A"> Price: 600 SEK per person for 2 hr ride</h4>
+       <p class="text-center m-1 font-weight-bold" >Our tours are 2 hours, including brushing, saddling of horses and preparatory lesson for the riding tour in the paddock.<br>
+           1 hour for children with an adult  An hour with our horses that is adapted for children with parents.</p>
+     </div>
+      <div class="col-sm-12 bg-light shadow p-2 m-0">
+         <p><h4  class="text-center m-1 font-weight-bold" " style="color:#A1C31A">Price: 395 SEK per person</h6> 
+     <p class=" text-center m-1 font-weight-bold" >Here you have a cozy moment with the horse. After brushing, you get the opportunity to sit on the horse where a leader joins walking along side you. 
+     Parents of the children are also involved and help to lead. Also suitable for the disabled and for those who have never been with horses.
+     Rental of horse with equipment Price: SEK 300 per hour per horse
+     Returning customers with riding experience have the opportunity to rent a horse per hour. Including riding in our paddocks or uterite  or all weather riding arena<br>
+ </p>
+    </div>  
+    <div class="m-0"> <h2 class="text-center mt-0 m-1 font-weight-bold" " style="color:#A1C31A">Corporate Offers</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 bg-light shadow p-4 mb-5">
+           <div class="text-center m-1 font-weight-bold" ><p> We can also offer corporate tours for groups of up to 10 people. The price is from 400 SEK per person per day.
+              Corporate riding staff days are perfect for you who want to do something exciting and experience a wonderful ride between two prosperous fuzzy horse ears.
+              Or why not book riding as a workout?
+              You can also bring family and or friends on your own private outdoor ride or in a riding arena with our horses.
+              Outings with special wishes in addition to our regular tour riding, for something memorable
+              Riding with our horses in our riding paddocks or in the arena.
+              Booking a riding arena for Event Price: By agreement
+              Always state what riding knowledge when you book.
+              The tempo is regulated according to the group's wishes. We have both a helmet and a safety vest for hiring.</p>
+            </div>
+             <p><h4  class="text-center m-1 font-weight-bold" style="color:#A1C31A">Payment</h4> 
+              <p class="text-center m-1 font-weight-bold" >To guarantee your place for the tour ride, it is best to pay in advance via bankgiro 776-0549 or swish 0706390141. (State tour ride date. Time and name)
+                There is also the possibility of card payment and cash payment on site
+                You can pay both in cash and with a swish bank transfer and card. For cash, please have correct amount before you arrive</p> 
+             
+        <a class="button text-center m-1 font-weight-bold" " href="{% url 'booking' %}">Book Now</a>
+        </div> 
+      </div>
+    </div>
+   </div> 
+  </div> 
+ </div>
+</div>
+
+{% endblock %}

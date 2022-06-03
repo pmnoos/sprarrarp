@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Individual Bookings{% endblock %}
+{% block content %}
+<div class="container">
+	<h1 class="about-title">Bookings Page</h1>
+	<h2 class="about-title">Individual Registration-<a href="/group">Group Registration</h2></a>
+	 
+
+	 <div class="row"> 
+		<div class="col-12 mt-5">
+			<h5 class="booking">Please Enter Your Contact Info  </h5>
+    
+	{{ crispy | forms }}
+</div>
+
+  {% endblock %}

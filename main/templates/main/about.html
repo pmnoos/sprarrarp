@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock%}
+{% block content %}
+
+<div class="container">
+    <div class="container-fluid">
+        <h1 class="about-title">About us</h1>
+        <h1 class="about-title">Sparrarp Islandhastar</h1>
+        <h3 class="about-title">Horse Riding School & Recreation Center</h3>
+        <hr style=color:black;>
+        <p class="about-message">Sparrarp's Icelandic Horses is a business that offers people with different needs and wishes to ride and socialize with Icelandic horses - who are well trained to be ridden with <strong>Natural Horsemanship.</strong><br/> It is with natural horse management where all the training is based from the ground up which involves communicating, handling and training the horses in a way that is natural for the horse. <br/>The result of this is a self-supporting horse. A partner with his own influence who willingly does his best, because it has developed joy in the work.<br/> On the farm we have 17 horses.<br/>
+        As our facility also has a purpose built indoor <a class="arena" href="{% url 'ridschool' %}">riding arena</a>  , it is possible to book for your own events or to hold your own courses.<br/>
+        Riding with our horses together in the many acres surrounding the school will give you the competence to become a very experienced rider and to give you many hours of enjoyment - plus a certian amount of fitness<br/>
+        Phillip is the owner and responsible for the horses' health and well-being, as well as maintenance and care of the farm.</p>           
+      </div>
+    </div>
+    
+    <hr style=color:black;>
+{% endblock %}

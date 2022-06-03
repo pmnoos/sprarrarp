@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% block title %}Calendar{% endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Calendar</h1>
+        </div>
+    </div>
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 align-content-center">
+            <iframe src="https://calendar.google.com/calendar/embed?src=d90ren8u5ulpp8uk52tluhln64%40group.calendar.google.com&ctz=Europe%2FStockholm" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+    </div> 
+    </div class="container" > <a class="nav-link" href="{% url 'booking' %}"><h2>Click Here to make a booking</h2></a></div>
+</div>
+
+{% endblock %}

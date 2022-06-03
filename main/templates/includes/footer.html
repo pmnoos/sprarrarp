@@ -1,0 +1,31 @@
+{% load static %} {% block footer %}
+
+<footer>
+  <div class="jumbotron text-center" style="height: 200px">
+    <div class="row">
+      <div class="col-sm-4 footer-image">
+        <img
+          src="{% static '/img/BILD6.jpg' %}"
+          class="img-thumbnail"
+          alt="walking with a Horse" width="220" height="220">
+      </div>
+      <div class="col-sm-4">
+        <h3>Contact Information</h3>
+       Address:<a href="{% url 'contact'%}">Sparrarp 2440 - 28276 Hästveda</a><br>
+       E-Mail: <a href="{ % url 'sparrarpislandshastar@gmail.com' % }">sparrarpislandshastar@gmail.com</a><br> 
+       Phone: <a href="{url '46706390141'}">46-706-390-141</a>
+        </p>
+        <p>Copyright &copy; 2021 easyas-abc.com.</p>
+      </div>
+      <div class="col-sm-4 footer-image">
+        <img
+          src="{% static '/img/BILD3.jpg' %}"
+          class="img-thumbnail" 
+          alt="Training ride" width="220"height="220"
+        />
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

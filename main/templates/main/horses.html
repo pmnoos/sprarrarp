@@ -1,0 +1,300 @@
+{% extends 'main/base.html' %}
+{% block title %}Our Horses{% endblock %}
+{% load static %}
+
+{% block content %}
+
+
+<h2 class="text-center m-1" style="color:#A1C31A">Our Horses</h2>
+    <h3 class="text-center" style="color:#A1C31A">A Great Adventure & Experience</h3>
+<div class="container-fluid mt-3">
+    <div class=row>
+      <div class="col-md-12 bg-light shadow p-4 mb-4 bg-white">
+ <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="{% static 'img/turriding/two horses.jpg' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'img/turriding/BILD4.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img  src="{% static 'img/turriding/BILD5.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="{% static 'img/turriding/BILD6.jpg' %}"onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="{% static 'img/turriding/two horses.jpg' %}"style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img  src="{% static 'img/turriding/BILD4.jpg' %}"style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img  src="{% static 'img/turriding/BILD5.jpg' %}" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="{% static 'img/turriding/BILD6.jpg' %}" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="{% static 'img/turriding/two horses.jpg' %}" onclick="currentSlide(1)" alt="Why not take the opportunity to take a ride on our fine Icelandic horses and enjoy the beautiful nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="{% static 'img/turriding/BILD4.jpg' %}"onclick="currentSlide(2)" alt="Bring a friend or come alone and join a guided ride with our lively, happy and well-ridden Icelandic horses who are all ridden and trained with Natural Horsemanship">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="{% static 'img/turriding/BILD5.jpg' %}"onclick="currentSlide(3)" alt="It is important that each rider finds the right horse to ride, based on previous experience.">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="{% static 'img/turriding/BILD6.jpg' %}"onclick="currentSlide(4)" alt="Experience beautiful nature without stress on horseback">
+    </div>
+  </div>
+</div>
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="container-fluid mt-3">
+  <div class=row>
+    <div class="col-md-12 bg-light shadow p-4 mb-4 bg-white">
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+  <img src="{% static 'img/turriding/BILD7.jpg' %}"  onclick="openModal();currentSlide(1)" class="hover-shadow">
+</div>
+<div class="column">
+  <img src="{% static 'img/turriding/BILD8.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+</div>
+<div class="column">
+  <img  src="{% static 'img/turriding/BILD9.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+</div>
+<div class="column">
+  <img src="{% static 'img/turriding/BILD6.jpg' %}"onclick="openModal();currentSlide(4)" class="hover-shadow">
+</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="{% static 'img/turriding/BILD7.jpg' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img  src="{% static 'img/turriding/BILD8.jpg' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="{% static 'img/turriding/BILD9.jpg' %}"style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="{% static 'img/turriding/BILD6.jpg' %}" style="width:100%">
+  </div>
+
+  <!-- Next/previous controls -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Caption text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail image controls -->
+  <div class="column">
+    <img class="demo"  src="{% static 'img/turriding/BILD7.jpg' %}"  onclick="currentSlide(1)" alt="You start by getting to know the horse you have chosen or been assigned.">
+  </div>
+
+  <div class="column">
+    <img class="demo" src="{% static 'img/turriding/BILD8.jpg' %}" onclick="currentSlide(2)" alt="Experience beautiful nature without stress on horseback">
+ </div>
+
+  <div class="column">
+    <img class="demo" src="{% static 'img/turriding/BILD9.jpg' %}"onclick="currentSlide(4)" alt="There you get to know your assigned horses and get a thorough review of riding before we then set off on a ride that is adapted to the participants' riding habits.
+    
+    During the tour, we also give tips and advice on how to best get your horse">
+  </div>
+</div>
+</div>
+<script>
+// Open the Modal
+function openModal() {
+document.getElementById("myModal2").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+document.getElementById("myModal2").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+   
+      
+        <div class="column">
+          <div class="card">
+            <img  src="{% static 'img/turriding/BILD9.jpg' %}" alt="Two Horses">
+            <div class="container">
+              <p>There you get to know your assigned horses and get a thorough review of riding before we then set off on a ride that is adapted to the participants' riding habits.
+    
+                During the tour, we also give tips and advice on how to best get your horse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="{% static 'img/turriding/BILD10.jpg' %}" alt="Two Horses">
+            <div class="container">
+              <p>Note! The Icelandic horse is a slightly smaller horse that is strong but has a weight limit of 85kg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="{% static 'img/turriding/BILD11.jpg' %}" alt="Two Horses"style="width:100%">
+              <div class="container">
+                <p>The tempo is regulated according to the group's wishes.</p></p>
+               </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+             <img src="{% static 'img/turriding/BILD12.jpg' %}" alt="Two Horses" style="width:100%">
+              <div class="container">
+                <p>Then we brush, saddle and bridle the horses</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img  src="{% static 'img/turriding/BILD13.jpg' %}" alt="Two Horses">
+              <div class="container">
+                <p>There you get to know your assigned horses and get a thorough review of riding before we then set off on a ride that is adapted to the participants' riding habits.
+      
+                  During the tour, we also give tips and advice on how to best get your horse.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="{% static 'img/turriding/walkingback.jpg' %}" alt="Two Horses">
+              <div class="container">
+                <p>Note! The Icelandic horse is a slightly smaller horse that is strong but has a weight limit of 85kg</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>    
+</div>   
+<script src="{% static 'js/scripts.js' %}"></script>
+{% endblock %}    

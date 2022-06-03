@@ -1,0 +1,80 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sparrarp's Icelandic Horses-Riding School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "icon" href ="{% static '/img/logo.ico' %}"  type = "image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+  <link href="https://calendar.google.com/calendar/embed?src=d90ren8u5ulpp8uk52tluhln64%40group.calendar.google.com&ctz=Europe%2FStockholm">
+  <link href="https://calendar.google.com/calendar/ical/d90ren8u5ulpp8uk52tluhln64%40group.calendar.google.com/public/basic.ics">
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/modal.css' %}">
+</head>
+<body> 
+  <div id="google_translate_element">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="d-flex flex-row-reverse">
+          <div class="p-2"> <a id="rt-twitter-btn" target="_blank" href="https://twitter.com/login?lang=en"></a> <span class="fa fa-twitter "  ></span></div>
+          <div class="p-2"><a id="rt-facebook-btn" target="_blank" href="https://www.facebook.com/sparrarpislandshastar"></a> <span class="fa fa-facebook"></span></div>
+          <div class="p-2"> <a id="rt-linkedin-btn" target="_blank" href="https://www.linkedin.com/uas/login"><span class="fa fa-linkedin"></span></a></div>
+          <div class="p-2"><a id="rt-google-plus-btn" target="_blank" href="https://plus.google.com/people"><span class="fa fa-google-plus"></span></a></div>
+          <div class="p-2"> <a id="rt-youtube-btn" target="_blank" href="https://www.youtube.com/"><span class="fa fa-youtube"></span></a></div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="jumbotron text-center m-1">
+<div class="clearfix"><img class="logo" src="{% static '/img/logo.png' %}" alt="logo"></div>
+ <h1 style="text-center m-1 font-weight-bold">Sparrarp Islandhastar</h1>
+  <h3 style="text-center m-1 font-weight-bold">Horse Riding School & Recreation Center</h3>
+  <br>
+  <div class="div"></div> 
+  
+</div>
+</div>
+{% block nav %}
+{% include "includes/navbar.html" %}
+{% endblock %}
+
+
+ 
+
+<div class="container">
+  {% for msg in messages %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ msg }}
+
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+ {% endfor %} 
+</div>
+
+
+
+      {% block content %}
+      {% endblock %}
+          
+    {% block footer %}
+       {% include "includes/footer.html" %}
+      {% endblock %}
+</div>          
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+              <script src="{% static 'js/index.js' %}"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              
+  </body>
+  </html>
